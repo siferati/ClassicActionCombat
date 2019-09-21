@@ -1,0 +1,7 @@
+## Interface: 11302
+## Title: Classic Action Combat
+## Notes: Action combat controls for World of Warcraft Classic .
+## Author: Tirafesi
+## SavedVariablesPerCharacter: CAC_Settings
+
+ClassicActionCombat.lua
