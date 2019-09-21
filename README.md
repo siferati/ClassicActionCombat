@@ -10,6 +10,10 @@ Classic Action Combat is an Addon for World of Warcraft Classic that brings the 
 * **Use your main mouse buttons in combat.** Bind spells, macros and items to the left and right mouse buttons. Your mouse buttons can be bound to anything while you're mouselooking!
 * **Automatically shows the cursor when you need it.** The addon detects when you open a window, such as your character profile or inventory, and stops mouselooking. Once you close the window, mouselook automatically resumes!
 
+## Requirements
+
+In order for the addon to work correctly, you must have nameplates active. You can activate them by going to Interface Options > Names > Unit Nameplates > Always Show Nameplates.
+
 ## Controls
 
 The default controls are the following:

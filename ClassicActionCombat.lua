@@ -235,7 +235,7 @@ function eventHandlers.ADDON_LOADED(name)
 				TOGGLE = "LALT" -- not settable by the user
 			},
 			windows = {
-				"AddonList", "BankFrame", "CharacterFrame", "ContainerFrame1", "FriendsFrame", "GameMenuFrame", "GossipFrame", "GwBagFrame", "GwBankFrame", "GwLockHudButton", "GwQuestviewFrame", "GwSettingsWindow", "HelpFrame", "InspectFrame", "InterfaceOptionsFrame", "KeyBindingFrame", "LootFrame", "MacroFrame", "MailFrame", "MAOptions", "MerchantFrame", "QuestLogFrame", "StaticPopup1", "SpellBookFrame", "TalentFrame", "TaxiFrame", "TradeFrame", "VideoOptionsFrame", "WorldMapFrame"
+				"AuctionFrame", "AddonList", "BankFrame", "CharacterFrame", "ContainerFrame1", "FriendsFrame", "GameMenuFrame", "GossipFrame", "GwBagFrame", "GwBankFrame", "GwLockHudButton", "GwQuestviewFrame", "GwSettingsWindow", "HelpFrame", "InspectFrame", "InterfaceOptionsFrame", "KeyBindingFrame", "LootFrame", "MacroFrame", "MailFrame", "MAOptions", "MerchantFrame", "QuestLogFrame", "StaticPopup1", "SpellBookFrame", "TalentFrame", "TaxiFrame", "TradeFrame", "VideoOptionsFrame", "WorldMapFrame"
 			}
 		}
 	end
