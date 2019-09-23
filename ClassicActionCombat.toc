@@ -2,6 +2,6 @@
 ## Title: Classic Action Combat
 ## Notes: Action combat controls for World of Warcraft Classic.
 ## Author: Tirafesi
-## SavedVariablesPerCharacter: CAC_Settings
+## SavedVariables: CAC_Settings
 
 ClassicActionCombat.lua

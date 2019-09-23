@@ -268,7 +268,7 @@ mainFrame:SetScript("OnUpdate", function(_, elapsed)
 	if timeSinceLastUpdate < 1 / ups then
 		return
 	else
-		timeSinceLastUpdate = timeSinceLastUpdate - 1 / ups
+		timeSinceLastUpdate = timeSinceLastUpdate % (1 / ups)
 	end
 	
 	-- true if there is a new window open
