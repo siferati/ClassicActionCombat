@@ -1,6 +1,6 @@
 # Classic Action Combat
 
-Classic Action Combat is an Addon for World of Warcraft Classic that brings the typical controls found in other MMORPGs that feature action combat.
+Classic Action Combat is an Addon for World of Warcraft Classic that implements the typical controls found in other MMORPGs that feature action combat.
 
 ## Features
 
@@ -12,7 +12,7 @@ Classic Action Combat is an Addon for World of Warcraft Classic that brings the 
 
 ## Requirements
 
-In order for the addon to work correctly, you must have nameplates active. You can activate them by going to Interface Options > Names > Unit Nameplates > Always Show Nameplates.
+In order for the addon to work correctly, you must have nameplates active. You can enable them by going to Interface Options > Names > Unit Nameplates > Always Show Nameplates.
 
 ## Controls
 
