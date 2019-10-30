@@ -37,25 +37,31 @@ SlashCmdList["CAC"] = function(msg)
 	elseif cmd == "show" and arg1 == "keybinds" then	
 		print("Classic Action Combat Keybinds:")
 		print("----------")
+		print("TOGGLE : " .. CAC_Settings.keybinds.TOGGLE)
 		print("INTERACT : " .. CAC_Settings.keybinds.INTERACT)
 		print("----------")
 		print("BUTTON1 : " .. CAC_Settings.keybinds.mouse["BUTTON1"])
 		print("SHIFT-BUTTON1 : " .. CAC_Settings.keybinds.mouse["SHIFT-BUTTON1"])
 		print("CTRL-BUTTON1 : " .. CAC_Settings.keybinds.mouse["CTRL-BUTTON1"])
 		print("----------")
+		print("BUTTON2 : " .. CAC_Settings.keybinds.mouse["BUTTON2"])
 		print("SHIFT-BUTTON2 : " .. CAC_Settings.keybinds.mouse["SHIFT-BUTTON2"])
 		print("CTRL-BUTTON2 : " .. CAC_Settings.keybinds.mouse["CTRL-BUTTON2"])
 	
 	-- /cac bind <key> <binding>
 	elseif cmd == "bind" and arg2 and 
 			(arg1 == "BUTTON1" or arg1 == "SHIFT-BUTTON1" or arg1 == "CTRL-BUTTON1" or
-			arg1 == "SHIFT-BUTTON2" or arg1 == "CTRL-BUTTON2") then
+			arg1 == "BUTTON2" or arg1 == "SHIFT-BUTTON2" or arg1 == "CTRL-BUTTON2") then
 		CAC_Settings.keybinds.mouse[arg1] = arg2
-	
+
+	-- /cac bind TOGGLE <key>
+	elseif cmd == "bind" and arg2 and arg1 == "TOGGLE" then
+		CAC_Settings.keybinds.TOGGLE = arg2
+
 	-- /cac bind INTERACT <key>
 	elseif cmd == "bind" and arg2 and arg1 == "INTERACT" then
 		CAC_Settings.keybinds.INTERACT = arg2
-	
+		
 	-- error
 	else
 		print("Error: invalid syntax.")
@@ -228,12 +234,12 @@ function eventHandlers.ADDON_LOADED(name)
 					["BUTTON1"] = "STARTATTACK",
 					["SHIFT-BUTTON1"] = "NONE",
 					["CTRL-BUTTON1"] = "NONE",
-					["BUTTON2"] = "TARGETSCANENEMY", -- not settable by the user
+					["BUTTON2"] = "TARGETSCANENEMY",
 					["SHIFT-BUTTON2"] = "NONE",
 					["CTRL-BUTTON2"] = "NONE"
 				},
 				INTERACT = "F",
-				TOGGLE = "LALT" -- not settable by the user
+				TOGGLE = "LALT"
 			},
 			windows = {
 				"AuctionFrame", "AddonList", "BankFrame", "CharacterFrame", "ContainerFrame1", "FriendsFrame", "GameMenuFrame", "GossipFrame", "GwBagFrame", "GwBankFrame", "GwLockHudButton", "GwQuestviewFrame", "GwSettingsWindow", "HelpFrame", "InspectFrame", "InterfaceOptionsFrame", "KeyBindingFrame", "MacroFrame", "MailFrame", "MAOptions", "MerchantFrame", "QuestLogFrame", "StaticPopup1", "SpellBookFrame", "TalentFrame", "TaxiFrame", "TradeFrame", "VideoOptionsFrame", "WorldMapFrame"
